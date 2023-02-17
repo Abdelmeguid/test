@@ -1,0 +1,147 @@
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+/* End Variables */
+/* Start Global Rules */
+ {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+}
+.div-1 {
+  background-color: #ebebeb;
+  width: 99px;
+}
+
+.div-2 {
+  background-color: #abbaea;
+}
+
+.big {
+  display: grid;
+  max-width: auto;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-areas:
+    "header header header header header header"
+    "image1 image2 image3 image1 image5 image6"
+    "footer footer footer footer footer footer";
+
+  background-color: #415a6e;
+  grid: 20%;
+}
+.big > div {
+  background-color: rgba(233, 222, 213, 0.8);
+  text-align: center;
+  margin: auto;
+  border: 9px solid #e20d1f;
+}
+.header {
+  grid-area: header;
+  background-color: rgb(151, 238, 12);
+  height: 90px;
+  position: relative;
+  border: 3px solid #080a0a;
+}
+.element {
+  position: absolute;
+  font-size: xx-large;
+  height: 10px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  text-align: center;
+}
+.image1 {
+  max-width: 140px;
+  max-height: 440px;
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+  margin-left: 5px;
+}
+.image2 {
+  display: block;
+  max-width: 140px;
+
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+  margin-left: 5px;
+}
+.image3 {
+  display: block;
+  max-width: 140px;
+
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+}
+.image4 {
+  display: block;
+  max-width: 140px;
+
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+}
+.image5 {
+  display: block;
+  max-width: 140px;
+
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+}
+.image6 {
+  display: block;
+  max-width: 140px;
+
+  background-color: blue;
+  opacity: 1;
+  z-index: 1;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(101, 29, 189);
+  position: relative;
+  height: 100px;
+  border: 3px solid black;
+}
+.footer2 {
+  position: absolute;
+  font-size: xx-large;
+  height: 10px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  text-align: center;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTohGddm6CpLQbtzL0eecRo4YvMiXDW_fM43A&usqp=CAU");
+
+  /* Full height */
+  height: 100%;
+  z-index: -1;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1400px 1100px;
+}
